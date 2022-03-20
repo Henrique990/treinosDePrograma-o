@@ -23,3 +23,4 @@ function testStrict(val) {
 console.log(testStrict(10)); // Not Equal
 console.log(testStrict(7)); // Equal
 console.log(testStrict("7")); // Not Equal
+console.log(testStrict("20")); // Not Equal
