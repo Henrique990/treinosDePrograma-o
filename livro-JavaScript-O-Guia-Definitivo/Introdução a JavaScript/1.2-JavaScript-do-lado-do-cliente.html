@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- biblioteca library.js-->
+    <script src="library.js"></script>
+</head>
+<body>
+    <p>This is a paragraph of Html</p>
+    <script>
+        // E este é um código JavaScript do lado do cliente
+        // literalmente incorporado no arquivo HTML
+        function moveon() {
+            // Exibe uma caixa de diálogo modal para fazer uma pergunta as usuárias
+            var answer = confirm("Ready to move on?");
+            // Se ele clicou no botão "OK", faz o navegar carregar uma nova página
+            if (answer) {
+                window.location = "http://www.w3schools.com";
+            }
+        }
+        // Executa a função definida acima por 1 minuto (60.000 milissegundos) a partir de agora.
+        setTimeout(moveon, 60000);
+
+        // Exibe uma mensagem em uma seção de saída de depuração especial do documento.
+        // Se o ducumento não contém esta seção, cria uma.
+        function debug(msg) {
+            var log = document.getElementById("debuglog");
+            // Se não existe elemento algum com a identificação "debuglog", cria um.
+            if (!log) {
+                log = document.createElement("div");// Cria um novo elemento <div>
+                log.id = "debuglog";                // Define o atributo de identificação html nele
+                log.innerHTML = "<h1>Debug Log</h1>";// Defieno o conteúdo inicial
+                document.body.appendChild(log);      // Adiciona-o no final do documento
+            }
+            // Agora, coloca a mensagem em seu próprio <pre> e a anexa no log
+            var pre = document.createElement("pre"); // Cria uma marca <pre>
+            var text = document.createTextNode(msg); // Coloca a msg em um nó de texto
+            pre.appendChild(text);                   // Adiciona o texto no <pre>
+            log.appendChild(pre);                    // Adiciona o <pre> no log
+        }
+    </script>
+    <p>Here is more HTML.</p>
+</body>
+</html>
+
+
