@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mey blog</title>
+</head>
+<body>
+    <header>
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+    </header>
+    <main>
+        <div>main.div</div>
+    </main>
+    <script>
+        const div = document.createElement('div');
+        div.innerText = "Olá Devs!";
+
+        // insertBefore
+        const body = document.querySelector('body');
+        // const script = body.querySelector('script');
+        // body.insertBefore(div, script);
+        const header = body.querySelector('header');
+        body.insertBefore( div, header.nextElementSibling)
+    </script>
+</body>
+</html>

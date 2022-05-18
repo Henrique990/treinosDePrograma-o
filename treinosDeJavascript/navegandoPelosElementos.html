@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegando pelos elementos</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Blog</h1>
+        <p>kkkkk</p><h2>bloguinho</h2><div>12323</div>
+        <p>lksaglkasdfklflak</p>
+    </header>
+    <script>
+        const h2 = document.querySelector('h2');
+        // nextElementSibling - retorna o elemento seguinte
+        // previousElementSibling - retorna o elemento anterior
+        // nextSibling - retorna o elemento seguinte
+        // previousSibling - retorna o elemento anterior
+        console.log(h2.nextElementSibling); 
+        console.log(h2.previousElementSibling);
+        console.log(h2.nextSibling); 
+        console.log(h2.previousSibling); 
+    </script>
+</body>
+</html>

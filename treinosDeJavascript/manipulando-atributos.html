@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog - Discover</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Blog - Discover</h1>
+    </header>
+
+    <script>
+        const header = document.querySelector('header');
+        header.setAttribute('class', 'container');
+
+        const containerClass = document.querySelector('.container');
+
+        console.log(containerClass.getAttribute('class')); /*
+        getAttribute() - retorna o valor do atributo
+        setAttribute() - altera o valor do atributo
+        removeAttribute() - remove o atributo
+        */
+        
+
+        // alterar cor do container
+        containerClass.style.background = 'red';
+        containerClass.style.display = 'flex';
+        containerClass.style.justifyContent = 'center';
+        containerClass.style.flexDirection = 'column';
+        containerClass.style.alignItems = 'center';
+        containerClass.style.padding = '20px';
+        containerClass.style.color = 'white';
+        containerClass.style.fontSize = '2rem';
+        
+        
+        
+    </script>
+</body>
+</html>
